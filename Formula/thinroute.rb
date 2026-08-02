@@ -5,21 +5,21 @@
 class Thinroute < Formula
   desc "A local-first, OpenAI-compatible LLM gateway"
   homepage "https://github.com/0xfig-labs/thinroute"
-  version "0.1.1"
+  version "0.1.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/0xfig-labs/thinroute/releases/download/v0.1.1/thinroute_0.1.1_darwin_amd64.tar.gz"
-      sha256 "e1220e613d0b2af5c71fe6ab51d98c9bbf06bbee6d803422071640bf4358ccac"
+      url "https://github.com/0xfig-labs/thinroute/releases/download/v0.1.4/thinroute_0.1.4_darwin_amd64.tar.gz"
+      sha256 "89bd8bb364c88ef8684c5b3ebd688c30e3a0fc802dab364ff19eeb830d4ec443"
 
       define_method(:install) do
         bin.install "thinroute"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/0xfig-labs/thinroute/releases/download/v0.1.1/thinroute_0.1.1_darwin_arm64.tar.gz"
-      sha256 "6c8ce25de5bef16e77a5ae487be2dd406e0ad4c0b3ad5a29cd83425dbf0df2c9"
+      url "https://github.com/0xfig-labs/thinroute/releases/download/v0.1.4/thinroute_0.1.4_darwin_arm64.tar.gz"
+      sha256 "7c5290b057a4d93f4eac0b8eefbfbc4f7335e91464f193bc3012d2bd25eb4e2f"
 
       define_method(:install) do
         bin.install "thinroute"
@@ -29,15 +29,15 @@ class Thinroute < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/0xfig-labs/thinroute/releases/download/v0.1.1/thinroute_0.1.1_linux_amd64.tar.gz"
-      sha256 "22c9909dae00443a1c3b9db4ce9f376814e9349b43c8ecc733a42397a115f429"
+      url "https://github.com/0xfig-labs/thinroute/releases/download/v0.1.4/thinroute_0.1.4_linux_amd64.tar.gz"
+      sha256 "256a81a581083ba3a5983d2bc81a34145b3de671b5e111d1ef82f3cef8efa45f"
       define_method(:install) do
         bin.install "thinroute"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/0xfig-labs/thinroute/releases/download/v0.1.1/thinroute_0.1.1_linux_arm64.tar.gz"
-      sha256 "ec1e9c23155e499b62c6c75e5e382d581ba5183625c0c501cc741aaad96d3133"
+      url "https://github.com/0xfig-labs/thinroute/releases/download/v0.1.4/thinroute_0.1.4_linux_arm64.tar.gz"
+      sha256 "260b99236da646bf69a69c078abdf0d9a0569db0f83f0d338140b03440e72be5"
       define_method(:install) do
         bin.install "thinroute"
       end
